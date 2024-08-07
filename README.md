@@ -16,8 +16,7 @@ Perform AI Language Analysis over Voice to text Transcriptions
 [Create Object Store Bucket and Authentication for Autonomous Database](https://www.youtube.com/watch?v=IPkjI6zd2CU)
 
 ## Create APEX Workspace
-[OCI Quick Start - Deploy a low-code app on Autonomous Database using APEX](https://cloud.oracle.com/resourcemanager/quickstarts?solution-name=apex&region=us-ashburn-1)
-
+OCI Quick Start - Deploy a low-code app on Autonomous Database using APEX
 > https://cloud.oracle.com/resourcemanager/quickstarts?solution-name=apex&region=*home-region*
 
 (Note - ensure logged in to your Cloud Tenancy and that the home region is selected)
