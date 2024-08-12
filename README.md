@@ -25,6 +25,9 @@ OCI Quick Start - Deploy a low-code app on Autonomous Database using APEX
 
 (Note - ensure logged in to your Cloud Tenancy and that the home region is selected)
 
+## Load ONNX MiniLM into Database
+[Enable AI Vector Search in DB](https://blogs.oracle.com/apex/post/implement-semantic-search-in-oracle-apex-using-ai-vector-search-of-oracle-database-23ai)
+
 ## Next Steps
 - Run OCI Language Speech to Text service pointing to Object Store Location of audio files (Output is a series of .json transcription files)
 - Run Script to open each JSON file and write details into Database (written as JSON to preserve output)
