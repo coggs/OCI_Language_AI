@@ -1,3 +1,7 @@
+# Project Purpose
+Take call centre / helpdesk Audio recordings and analyse them using the latest OCI Language and Vector AI Capabilities.
+Using Speech to text, the audio files, stored in Oracle Object Store are transcribed, and sent for AI processing to determine key phrases and sentiment. After the analyses have been encoded as Vectors and stored in the Oracle Autonomous Database 23ai, it is then possible to interrogate the data for common areas of concern, repeating incidents and complaints, operator efficiency and even measure against KPIs and goals.
+
 # OCI_Language_AI
 Perform AI Language Analysis over Voice to text Transcriptions
 
