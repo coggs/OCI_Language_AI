@@ -6,6 +6,7 @@ The data loader in APEX has been configured to import this data format:
 operator_id | chat_content
 
 1 | "Hello, I am sample data, and I am calling about \"late fees\". Please can someone help me?"
+
 2 | "Hello, I am more sample data, and I am calling about my income tax."
 
 
