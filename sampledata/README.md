@@ -13,11 +13,11 @@ operator_id | chat_content
 ## Data Export
 Here is an example of exporting data (from Oracle Autonomous Database) in the format above (into an Object Store Bucket).
 
-BEGIN
-DBMS_CLOUD.EXPORT_DATA(
-  credential_name =>'<CREDENTIAL>',
-  file_uri_list =>'https://<namespace>.objectstorage.ap-sydney-1.oci.customer-oci.com/n/<namespace>/b/<bucket_name>/o/sampledata/callcentre.csv',
-  format => JSON_OBJECT('type' value 'csv', 'quote' value '"', 'escape' value true, 'delimiter' value '|', 'header' value true),
-  query => 'SELECT OPERATOR_ID, CHAT_CONTENT FROM CALLCENTRE'
-);
-END;
+      BEGIN
+      DBMS_CLOUD.EXPORT_DATA(
+        credential_name =>'<CREDENTIAL>',
+        file_uri_list =>'https://<namespace>.objectstorage.ap-sydney-1.oci.customer-oci.com/n/<namespace>/b/<bucket_name>/o/sampledata/callcentre.csv',
+        format => JSON_OBJECT('type' value 'csv', 'quote' value '"', 'escape' value true, 'delimiter' value '|', 'header' value true),
+        query => 'SELECT OPERATOR_ID, CHAT_CONTENT FROM CALLCENTRE'
+      );
+      END;
