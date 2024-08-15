@@ -1,0 +1,22 @@
+## Sample Chat Data
+Due to the length and possible punctuation (commas, quotes etc) the sample data is created with delimited "|" and escaped quotes. 
+
+The data loader in APEX has been configured to import this data format:
+
+operator_id | chat_content
+
+1 | "Hello, I am sample data, and I am calling about \"late fees\". Please can someone help me?"
+2 | "Hello, I am more sample data, and I am calling about my income tax."
+
+
+## Data Export
+Here is an example of exporting data (from Oracle Autonomous Database) in the format above (into an Object Store Bucket).
+
+BEGIN
+DBMS_CLOUD.EXPORT_DATA(
+  credential_name =>'<CREDENTIAL>',
+  file_uri_list =>'https://<namespace>.objectstorage.ap-sydney-1.oci.customer-oci.com/n/<namespace>/b/<bucket_name>/o/sampledata/callcentre.csv',
+  format => JSON_OBJECT('type' value 'csv', 'quote' value '"', 'escape' value true, 'delimiter' value '|', 'header' value true),
+  query => 'SELECT OPERATOR_ID, CHAT_CONTENT FROM CALLCENTRE'
+);
+END;
